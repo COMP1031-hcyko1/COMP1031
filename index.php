@@ -261,20 +261,6 @@ transition: all 0.01s ease 0s;
 </div>
 
 <script>
-window.onscroll = function() {myFunction()};
-
-var navbar = document.getElementById("navbar");
-var sticky = navbar.offsetTop;
-
-function myFunction() {
-  if (window.pageYOffset >= sticky) {
-    navbar.classList.add("sticky")
-  } else {
-    navbar.classList.remove("sticky");
-  }
-}
-
-
 function openNav() {
   document.getElementById("myNav").style.height = "100%";
 }
@@ -1088,7 +1074,7 @@ else{
 				echo "<table id=t01><tr><th>Address ID</th><th>Address</th><th>District</th><th>City ID</th><th>Postal Code</th><th>Phone</th><th>Last Update</th></tr>";
 			}
 			else if($table == 'category'){
-				echo "<table id=t01><tr><th>Categoy ID</th><th>Name</th><th>Last Update</th></tr>";
+				echo "<table id=t01><tr><th>Category ID</th><th>Name</th><th>Last Update</th></tr>";
 			}
 			else if($table == 'city'){
 				echo "<table id=t01><tr><th>City ID</th><th>City</th><th>Country ID</th><th>Last Update</th></tr>";
